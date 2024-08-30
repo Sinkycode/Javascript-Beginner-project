@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>People counter</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="container">
+      <div class="counter-app">
+        <h1>People entered:</h1>
+        <p id="display-count" class="display">0</p>
+        <div class="counter-app__buttons">
+          <button class="increment-btn" id="increment-btn" onclick="increment()">Increment</button>
+          <button class="save-btn" id="save-btn" onclick="save()">Save</button>
+        </div>
+        <button class="clear" id="clear-entries">Clear</button>
+        <p id="saved-entries">Previous entries:</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Basketball scoreboard -->
+
+  <div class="scoreboard-wrapper">
+    <div class="scoreboard">
+      <h2 class="scoreboard-title">Scoreboard</h2>
+      <div class="scoreboard-display">
+        <div class="home display">
+          <h1 id="home-score">0</h1>
+          <span class="tag">Home</span>
+        </div>
+
+        <div class="away display">
+          <h1 id="away-score">0</h1>
+          <span class="tag">Away</span>
+        </div>
+      </div>
+
+      <div class="scoreboard-controller">
+        <div class="home-control">
+          <span class="tag">Home</span>
+          <button id="one-home-point">1+</button>
+          <button id="two-home-point">2+</button>
+          <button id="three-home-point">3+</button>
+        </div>
+
+        <div class="away-control">
+          <span class="tag">Away</span>
+          <button id="one-away-point">1+</button>
+          <button id="two-away-point">2+</button>
+          <button id="three-away-point">3+</button>
+        </div>
+
+        <button id="reset">Reset</button>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
